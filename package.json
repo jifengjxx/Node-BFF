@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "NODE_ENV=development nodemon --exec 'babel-node ./app.js'",
-    "test:e2e": "node tests/e2e.test.js"
+  "scripts": { 
+    "client:dev":"scripty",
+    "client:prod":"scripty",
+    "server:dev":"scripty",
+    "server:prod":"scripty",
+    "server:start":"scripty",
+    "test:e2e":"scripty",
+    "test:api":"scripty",
+    "start": "pm2",
+    "build": "npm run client:prod && npm run server:prod",
+    "test": "",
+    "myjscpd":"jscpd -l 1 -k 10 ./demo/test.js"
   },
   "dependencies": {
     "@koa/router": "^10.0.0",
@@ -27,6 +36,7 @@
     "babel-loader": "^7.1.5",
     "chai": "^4.3.0",
     "nodemon": "^2.0.7",
+    "scripty": "^2.0.0",
     "webpack": "^5.23.0"
   }
 }

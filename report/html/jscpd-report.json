@@ -1,0 +1,85 @@
+{
+  "statistics": {
+    "detectionDate": "2021-03-01T11:48:21.368Z",
+    "formats": {
+      "javascript": {
+        "sources": {
+          "./demo/test.js": {
+            "lines": 18,
+            "tokens": 102,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 28,
+            "duplicatedTokens": 162,
+            "percentage": 155.56,
+            "percentageTokens": 158.82,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 18,
+          "tokens": 102,
+          "sources": 1,
+          "clones": 1,
+          "duplicatedLines": 14,
+          "duplicatedTokens": 81,
+          "percentage": 77.78,
+          "percentageTokens": 79.41,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      }
+    },
+    "total": {
+      "lines": 18,
+      "tokens": 102,
+      "sources": 1,
+      "clones": 1,
+      "duplicatedLines": 14,
+      "duplicatedTokens": 81,
+      "percentage": 77.78,
+      "percentageTokens": 79.41,
+      "newDuplicatedLines": 0,
+      "newClones": 0
+    }
+  },
+  "duplicates": [
+    {
+      "format": "javascript",
+      "lines": 15,
+      "fragment": "function add() {\n    return x + y;\n}\n\nfunction add() {\n    return x + y;\n}\n\nfunction add() {\n    return x + y;\n}\n\nfunction add() {\n    return x + y;\n}",
+      "tokens": 0,
+      "firstFile": {
+        "name": "demo/test.js",
+        "start": 5,
+        "end": 19,
+        "startLoc": {
+          "line": 5,
+          "column": 1,
+          "position": 21
+        },
+        "endLoc": {
+          "line": 19,
+          "column": 2,
+          "position": 102
+        }
+      },
+      "secondFile": {
+        "name": "demo/test.js",
+        "start": 1,
+        "end": 3,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 3,
+          "column": 2,
+          "position": 18
+        }
+      }
+    }
+  ]
+}
