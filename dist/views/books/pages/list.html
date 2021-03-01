@@ -1,0 +1,8 @@
+<head><script defer src="../../../assets/scripts/runtime.bundle.js"></script><script defer src="../../../assets/scripts/books-list.bundle.js"></script></head>{% block content %}
+    {% for item in data %}
+        <li>[[item.id]][[item.name]]</li>
+    {% endfor %}
+{% endblock %}
+
+{% block script}
+{% endblock %}

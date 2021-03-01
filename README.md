@@ -38,3 +38,10 @@ chmod -R +x scripts
 ### jscpd
 npm install -g jscpd
 代码重复率
+
+### webpack
+npm install --save-dev webpack
+## webpack多入口处理
+npm i yargs
+npm install --save-dev babel-cli
+npm i babel-core@^7.0.0-bridge.0 @babel/core regenerator-runtime

@@ -12,8 +12,12 @@ function initController(app){
     // router.get('/', (ctx, next) =>{
     //       ctx.body = 'controller 初始化成功'
     // })
+    // router.get('/', indexController.actionIndex);
+    // router.get('/books/list', booksController.actionBooksList)
     router.get('/', indexController.actionIndex);
-    router.get('/books/list', booksController.actionBooksList)
+    router.get('/api/getBooksList', apiController.actionBooksList);
+    router.get('/books/list', booksController.actionBooksList);
+    router.get('/books/create', booksController.actionBooksCreate);
     app
         .use(router.routes())
 

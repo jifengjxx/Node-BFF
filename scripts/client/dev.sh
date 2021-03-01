@@ -1,1 +1,1 @@
-echo 'hello me'
+webpack --mode development

@@ -17,7 +17,7 @@ const app = new Koa();
 // const logger = log4js.getLogger();
 log4js.configure({
     // 日志存放目录
-    appenders: { globalError: { type: "file", filename: "./logs/error.log" } },
+    appenders: { globalError: { type: "file", filename: "./src/server/logs/error.log" } },
     //日志分类
     categories: { default: { appenders: ["globalError"], level: "error" } }
   });
