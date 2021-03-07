@@ -17,17 +17,17 @@ const app = new Koa();
 // const logger = log4js.getLogger();
 log4js.configure({
     // 日志存放目录
-    appenders: { globalError: { type: "file", filename: "./src/server/logs/error.log" } },
+    appenders: { globalError: { type: "file",  filename: "./logs/error.log"} },
     //日志分类
     categories: { default: { appenders: ["globalError"], level: "error" } }
   });
   const logger = log4js.getLogger("globalError");
-  logger.trace("Entering cheese testing");
-  logger.debug("Got cheese.");
-  logger.info("Cheese is Comté.");
-  logger.warn("Cheese is quite smelly.");
+//   logger.trace("Entering cheese testing");
+//   logger.debug("Got cheese.");
+//   logger.info("Cheese is Comté.");
+//   logger.warn("Cheese is quite smelly.");
   logger.error("Cheese is too ripe!");
-  logger.fatal("Cheese was breeding ground for listeria.");
+//   logger.fatal("Cheese was breeding ground for listeria.");
 
 
 app.use(historyApiFallback({

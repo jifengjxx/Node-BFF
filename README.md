@@ -45,3 +45,20 @@ npm install --save-dev webpack
 npm i yargs
 npm install --save-dev babel-cli
 npm i babel-core@^7.0.0-bridge.0 @babel/core regenerator-runtime
+
+### 编写webpack插件
+  html-webpack-plugin  hooks
+
+copy-webpack-plugin
+### gulpfile
+    gulp-watch
+    @babel/plugin-transform-modules-commonjs
+
+
+
+
+
+
+
+
+

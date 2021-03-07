@@ -6,7 +6,7 @@ class IndexController extends Controller{
     }
      async actionIndex(ctx){
         //  throw new Error('自定义错误');
-        ctx.body = await ctx.render('index')
+        ctx.body = "🏮首页"
     }
 }
 

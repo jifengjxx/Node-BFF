@@ -7,7 +7,7 @@ class ErrorHandler {
                     ctx.body = '公益页面'
                 }
             } catch (e) {
-                logger.error(e.message)
+                // logger.error(e.message)
                 ctx.body = '500请求错误，正在积极修复'
             }
         })
